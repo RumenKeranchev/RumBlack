@@ -1,0 +1,90 @@
+﻿1. Премести Data в отделен проект
+	a. Добави "Class Library(.Net Standard)" - .Data
+	b. Преименувай ApplicationUser на User (папка Models) ВАЖИ САМО ЗА .NET CORE 2.0!!!!!!!!!
+	c. Преименувай DbContext-a
+	d. Добави пакети:
+		- Microsoft.EntityFrameworkCore.SqlServer
+		- Microsoft.AspNetCore.Identity.EntityFrameworkCore
+	e. Премести User в папка Models в новия проект и го изтрий от Main App  ВАЖИ САМО ЗА .NET CORE 2.0!!!!!!!!!
+	f. Премести Migrations от Data в папка Migrations в новия проект
+	g. Промени appsettings.json:
+		- Преименувай името на датабазата
+		- Добави Integrated Security = true
+	h. Смени namespace-ите ипреименивай името на миграцията
+	i. Добави референция в Main App към новия проект
+	j. Добави референция в _ViewImports.cshtml за .Data.Models
+	k. Създай моделите за датабазата в отделния проект
+		- Добави constraint-и (Attributes) като MaxLength
+	l.  From Solution Explorer, right-click on the project > Add > New Scaffolded Item.
+		From the left pane of the Add Scaffold dialog, select Identity > ADD.
+		In the ADD Identity dialog, select the options you want.
+		Select your existing layout page, or your layout file will be overwritten with incorrect markup. For example ~/Pages/Shared/_Layout.cshtml for Razor Pages ~/Views/Shared/_Layout.cshtml for MVC projects
+		Select the + button to create a new Data context class.
+		Select ADD.
+
+1.1 Създай User(ex ApplicationUser) : User в .Data проекта
+	a. в DbContext-a промени public class ApplicationDbContext : IdentityDbContext<ApplicationUser> <<<< добави <ApplicationUser> (User)
+	b. In the Startupclass update the call to AddIdentity to use the new ApplicationUser and add back the call to AddDefaultUI if you removed it previously.
+
+2. Създай връзките между моделите в DbContext-a 
+	a. За many-to-many връзка трябва отделен модел с Id и Class на моделите
+	e.g. : protected override void OnModelCreating(ModelBuilder builder)
+				{
+					builder
+						.Entity<PartCar>()												\
+						.HasKey(pc => new { pc.PartId, pc.CarId })	 = Many to many p1
+
+					builder
+						.Entity<PartCar>()								\
+						.HasOne(pc => pc.Car)						 \
+						.WithMany(c => c.Parts)					  = Many to many p2
+						.HasForeignKey(pc => pc.CarId)		 /
+
+					builder
+						.Entity<PartCar>()								\
+						.HasOne(pc => pc.Part)						 \
+						.WithMany(p => p.Cars)						  = Many to many p3
+						.HasForeignKey(pc => pc.PartId)		 /
+
+					builder
+						.Entity<Sale>()							\
+						.HasOne(s => s.Car)					 \
+						.WithMany(c => c.Sales)				= One to many relation
+						.hasForeignKey(s => s.CarId)	 /
+						
+						НЕ ИЗТРИВАЙ base.OnModelCreating(builder) !!!!
+				}
+
+3. Премести Services в отделен проект
+	а. Добави "Class Library(.Net Standard)" - .Services
+	b. Добави пакети:
+		- Microsoft.EntityFrameworkCore.SqlServer
+		- Microsoft.AspNetCore.Identity.EntityFrameworkCore
+	c. Създай папки Interfaces, Implementations, Models**
+		** Вътре се пишат методите,моделите за тези методи и като цяло функциалноста на сайта.
+		- всеки сървисе трябва да си има отделен интерфейс
+	d. Добави референция към Data проекта
+
+4. Създай контролер за новите сървиси**
+	** Примерно за CustomerService направи CustomerController
+	a. Добави референция в Main App към .Services проекта
+	b. В новия контролер:
+		- добави private readonly IExampleService service
+		- инициализирай service в конструктора на контролера:
+			public ExampleController( IExampleService service )
+			{
+				this.service = service;
+			}
+	c. Добави референция в Startup.cs:
+		- using .Services;
+		- using .Services.Interfaces
+		- Добави в Configure 	services.AddTransient<IExampleService, ExampleService>();
+
+5*. Ако се наложи добвави custom route:
+	a. В Startup.cs -> app.UseMvc() добави следното:
+		- routes.MapRoute(
+				name: "example",
+				template: "customers/all/{order}",  <<< order трябва да е в метода all за да го хване
+				defaults: new { controller = "Customers", action = "All" });
+
+6*. Добави Automapper dep injection pack to all but data.

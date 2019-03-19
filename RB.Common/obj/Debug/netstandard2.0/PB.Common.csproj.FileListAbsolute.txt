@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\bin\Debug\netstandard2.0\PB.Common.deps.json
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\bin\Debug\netstandard2.0\PB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\bin\Debug\netstandard2.0\PB.Common.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\PB.Common.csprojAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\PB.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\PB.Common.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\PB.Common.AssemblyInfo.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\PB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\PB.Common.pdb

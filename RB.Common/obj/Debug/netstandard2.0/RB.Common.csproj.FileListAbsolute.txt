@@ -1,0 +1,17 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\bin\Debug\netstandard2.0\RB.Common.deps.json
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\bin\Debug\netstandard2.0\RB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\bin\Debug\netstandard2.0\RB.Common.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\RB.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\RB.Common.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\RB.Common.AssemblyInfo.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\RB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\ClassLibrary1\obj\Debug\netstandard2.0\RB.Common.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\bin\Debug\netstandard2.0\RB.Common.deps.json
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\bin\Debug\netstandard2.0\RB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\bin\Debug\netstandard2.0\RB.Common.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\obj\Debug\netstandard2.0\RB.Common.csprojAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\obj\Debug\netstandard2.0\RB.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\obj\Debug\netstandard2.0\RB.Common.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\obj\Debug\netstandard2.0\RB.Common.AssemblyInfo.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\obj\Debug\netstandard2.0\RB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\RB.Common\obj\Debug\netstandard2.0\RB.Common.pdb

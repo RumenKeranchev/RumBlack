@@ -1,0 +1,14 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Services.deps.json
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Services.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Services.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.csprojAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.AssemblyInfo.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Common.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Data.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Common.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\bin\Debug\netstandard2.0\PB.Data.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\PermaBlack\PB.Services\obj\Debug\netstandard2.0\PB.Services.csproj.CopyComplete
